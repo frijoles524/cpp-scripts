@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
 
     if (cin.fail()) {
         cin.clear();
+        cin.ignore(256, '\n');
         std::cout << "Invalid input. Please enter an integer" << endl;
         return 1;
     }

@@ -14,7 +14,7 @@ int main() {
     if (cin.fail()) {
         cin.clear();
         cin.ignore(256, '\n');
-        std::cout << "Invalid input. Please enter number" << endl;
+        cerr << "Invalid input. Please enter number" << endl;
         return 1;
     }
 

@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (strcmp(argv[1], "-cf") > 0 && strcmp(argv[1], "-fc") > 0) {
-        cout << "Error: Invalid argument" << endl;
+        cerr << "Error: Invalid argument" << endl;
         return 1;
     }
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     if (cin.fail()) {
         cin.clear();
         cin.ignore(256, '\n');
-        cout << "Invalid input. Please enter a number" << endl;
+        cerr << "Invalid input. Please enter a number" << endl;
         return 1;
     }
 
